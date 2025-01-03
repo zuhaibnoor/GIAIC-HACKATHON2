@@ -24,10 +24,10 @@ export default function Home() {
         <nav className="w-4/5 m-auto h-[10vh] flex items-center justify-between">
           {/* Logo */}
           
-          <div className="text-base font-Helvetica font-bold">
+          {/* <div className="text-base font-Helvetica font-bold">
             <div className="text-[#FF9F0D] inline">Food</div>
             <div className="text-[#FFFFFF] inline">tuck</div>
-          </div>
+          </div> */}
 
           {/* Links */}
           <div className="font-Inter text-[#FFFFFF] font-[400] text-[16px] flex space-x-5">
@@ -67,21 +67,44 @@ export default function Home() {
         </nav>
         
         {/* social media icons and the image  */}
-      <div className='flex lg:flex-row flex-col p-20 h-screen'>
+      <div className='flex lg:flex-row flex-col h-[90%] pt-[2%] '>
 
-        <div className='border-[2px] w-[20px] h-2/5'>
+        <div className='basis-1/2 pb-[20%] pl-[5%] flex flex-row'>
+            
+          <div className=''>
 
+            <div className='w-[1px] h-[35%] border-x-[1px] border-r-0'></div>
+              <div className='flex flex-col space-y-10 mt-10 mb-10'>
+                  <Link href="https://google.com"><Image src="/fblogo.svg" alt="fb-logo" width={10} height={10}/></Link>
+                  <Link href="https://google.com"><Image src="/twitter-logo.svg" alt="fb-logo" width={12} height={12}/></Link>
+                  <Link href="https://google.com"><Image src="/pinterest-logo.svg" alt="fb-logo" width={12} height={12}/></Link>
+              </div>
+            <div className='w-[1px] h-[35%] border-x-[1px] border-r-0'></div>
+          
+          </div>
 
+          <div className='pl-[5%] pt-[5%]'>
+            <p className="font-['greatVibes'] font-['cursive'] text-[32px] font-[400] text-[#FF9F0D]">Its Quick & Amusing!</p>
+            <p className='text-[60px] font-Helvetica font-[700]'> <div className='inline text-[#FF9F0D]'>Th</div>e Art of speed</p>
+            <p className='text-[60px] font-Helvetica font-[700]'> food quality</p>
+            <p className='pt-[2%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />Consectetur officiis incidunt earum eaque aliquam hic enim </p>
+            <div className='ml-0 mt-5 h-[50px] w-[190px] bg-[#FF9F0D] place-content-center text-center rounded-[30px] text-[16px] font-Inter'>See Menu</div>
+
+          </div>
 
         </div>
 
-        <div className='border-[2px] w-[20px] h-[20px]'>
-
+        <div className='border-[1px] basis-1/2'>
+              {/* image here */}
         </div>
 
-      </div>
 
-      </div>
-    </div>
+        {/*flex container div for iamge and headline+icons*/}    
+      </div>  
+
+      </div>   {/* bg - black div*/}
+      
+      { /* bg image div*/ }
+    </div>  
   );
 }
