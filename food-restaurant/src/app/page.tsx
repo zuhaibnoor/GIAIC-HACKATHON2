@@ -84,9 +84,9 @@ export default function Home() {
           </div>
 
           <div className='pl-[5%] pt-[5%]'>
-            <p className="font-['greatVibes'] font-['cursive'] text-[32px] font-[400] text-[#FF9F0D]">Its Quick & Amusing!</p>
-            <p className='text-[60px] font-Helvetica font-[700]'> <div className='inline text-[#FF9F0D]'>Th</div>e Art of speed</p>
-            <p className='text-[60px] font-Helvetica font-[700]'> food quality</p>
+            <p className="font-['cursive'] text-[32px] font-[400] text-[#FF9F0D]">Its Quick & Amusing!</p>
+            <div className='text-[60px] font-Helvetica font-[700] tracking-tight  leading-tight'> <div className='inline text-[#FF9F0D]'>Th</div>e Art of speed</div> 
+            <p className='text-[60px] font-Helvetica font-[700]  tracking-tight leading-tight'> food quality</p>
             <p className='pt-[2%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />Consectetur officiis incidunt earum eaque aliquam hic enim </p>
             <div className='ml-0 mt-5 h-[50px] w-[190px] bg-[#FF9F0D] place-content-center text-center rounded-[30px] text-[16px] font-Inter'>See Menu</div>
 
@@ -94,7 +94,9 @@ export default function Home() {
 
         </div>
 
-        <div className='border-[1px] basis-1/2'>
+        <div className='basis-1/2 border-[1px] hidden lg:inline'>
+
+            <Image src = "/Image.svg" alt='homepage image' width = {877} height = {670} className='ml-[-15%]'/>
               {/* image here */}
         </div>
 
