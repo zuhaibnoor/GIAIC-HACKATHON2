@@ -94,7 +94,7 @@ export default function Home() {
 
         </div>
 
-        <div className='basis-1/2 border-[1px] hidden lg:inline'>
+        <div className='basis-1/2 hidden lg:inline'>
 
             <Image src = "/Image.svg" alt='homepage image' width = {877} height = {670} className='ml-[-15%]'/>
               {/* image here */}
