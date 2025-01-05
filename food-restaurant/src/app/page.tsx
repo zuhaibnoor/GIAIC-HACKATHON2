@@ -37,12 +37,12 @@ export default function Home() {
             <Link href="/Blog" className="hover:text-[#FF9F0D]">Blog</Link>
             <Link href="/Pages" className="hover:text-[#FF9F0D]">Pages</Link>
             <Link href="/About" className="hover:text-[#FF9F0D]">About</Link>
-            <Link href="/Shop" className="hover:text-[#FF9F0D]">Shop</Link>
-            <Link href="/Contact" className="hover:text-[#FF9F0D]">Contact</Link>
+            <Link href="/Shop" className="hover:text-[#FF9F0D] hidden lg:inline">Shop</Link>
+            <Link href="/Contact" className="hover:text-[#FF9F0D] hidden lg:inline">Contact</Link>
           </div>
 
           {/* Search and Handbag */}
-          <div className="flex items-center space-x-5">
+          <div className="flex items-center space-x-5 hidden lg:inline-block">
             <div className="border-[1px] border-[#FF9F0D] rounded-full p-3 flex items-center">
               <input
                 type="text"
@@ -158,15 +158,25 @@ export default function Home() {
     </div>
 
     {/* third div start (choose food items) */}
-    <div className='h-screen w-screen bg-[#0D0D0D]'>
+    <div className='h-[200vh] lg:h-[80vh] w-screen bg-[#0D0D0D]'>
 
       <h1 className='font-["cursive"] text-[#FF9F0D] text-[32px] text-center'> Food Category</h1>
       <div className='text-[#FFFFFF] text-[48px] font-Helvetica leading-tight tracking-tight font-[700] text-center'><div className='text-[#FF9F0D] inline '> Ch</div>oose Food Item</div>
+      
+      {/* food item images divs start */}
+      <div className='grid grid-cols-2 lg:grid-cols-4 p-5 lg:p-20'>
+
+          <Link href="/Menu" className='lg:w-[330px]'><Image src={"/food-item1.png"} height={328} width={330} alt='food-item' className='p-2 lg:p-0 w-[330px]'/></Link>
+          <Link href="/About" className='lg:w-[330px]'><Image src={"/food-item2.png"} height={328} width={330} alt='food-item' className='p-2 lg:p-0 w-[330px]'/></Link>
+          <Link href="/Menu" className='lg:w-[330px]'><Image src={"/food-item3.png"} height={328} width={330} alt='food-item' className='p-2 lg:p-0 w-[330px]'/></Link>
+          <Link href="/Menu" className='lg:w-[330px]'><Image src={"/food-item4.png"} height={328} width={330} alt='food-item' className='p-2 lg:p-0 w-[330px]'/></Link>
+
+      {/* food item images divs end */}
+      </div>
 
 
 
-
-      {/* third div start (choose food items) */} 
+      {/* third div end (choose food items) */} 
     </div>
     </>
   );
