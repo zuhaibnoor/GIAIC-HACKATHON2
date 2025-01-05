@@ -143,7 +143,7 @@ export default function Home() {
                 <Image src={"/div2-img2.png"} height={330} width={322} alt="div2-img1.png" className=''/>
                 <Image src={"/div2-img3.png"} height={330} width={322} alt="div2-img1.png" className='ml-[-8%]'/>
 
-              {/* images 1,2 and 3 here start */}
+              {/* images 1,2 and 3 here end */}
               </div>
             
             {/* flex item 2 for images end */}
@@ -158,7 +158,7 @@ export default function Home() {
     </div>
 
     {/* third div start (choose food items) */}
-    <div className='h-[200vh] lg:h-[80vh] w-screen bg-[#0D0D0D]'>
+    <div className='h-screen w-screen bg-[#0D0D0D]'>
 
       <h1 className='font-["cursive"] text-[#FF9F0D] text-[32px] text-center'> Food Category</h1>
       <div className='text-[#FFFFFF] text-[48px] font-Helvetica leading-tight tracking-tight font-[700] text-center'><div className='text-[#FF9F0D] inline '> Ch</div>oose Food Item</div>
@@ -172,11 +172,31 @@ export default function Home() {
           <Link href="/Menu" className='lg:w-[330px]'><Image src={"/food-item4.png"} height={328} width={330} alt='food-item' className='p-2 lg:p-0 w-[330px]'/></Link>
 
       {/* food item images divs end */}
+      </div>       
+
+      {/* third div end (choose food items) */} 
+    </div>
+
+
+    {/* fourth div start (why choose us) */}
+    <div className='w-screen h-screen bg-[#0D0D0D] flex flex-row p-5 lg:p-20 '>
+
+      {/* images start flex item1*/}
+      <div className='basis-1/2'>
+            <Image src={"/why-choose.jpg"} width={600} height={400} className='h-[100%] w-[75%] object-cover' alt="img"/>
+      </div>
+      
+
+      {/* why choose us start flex item2*/}
+      <div className='basis-1/2'>
+        <h1 className='font-["cursive"] text-[#FF9F0D] text-[32px]'> Why choose us?</h1>                  
+        <div className='text-[#FFFFFF] text-[48px] font-Helvetica leading-tight tracking-tight font-[700]'><div className='text-[#FF9F0D] inline '> Ex</div>tra Ordinary Taste <br className='hidden lg: inline md:inline'/>And Experience</div>
+        <div className='pt-4 lg:pr-10 text-justify mb-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</div>
+      {/* why choose us start flex item2*/}
       </div>
 
 
-
-      {/* third div end (choose food items) */} 
+    {/* fourth div end (why choose us) */}
     </div>
     </>
   );
