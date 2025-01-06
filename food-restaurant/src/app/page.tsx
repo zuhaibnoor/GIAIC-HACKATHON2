@@ -193,12 +193,13 @@ export default function Home() {
         <div className='text-[#FFFFFF] text-[48px] font-Helvetica leading-tight tracking-tight font-[700]'><div className='text-[#FF9F0D] inline '> Ex</div>tra Ordinary Taste <br className='hidden lg: inline md:inline'/>And Experience</div>
         <div className='pt-4 lg:pr-10 text-justify mb-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</div>
         <div className='w-full border-[1px] flex flex-col lg:flex-row h-[20%]'>
-          <div className='flex flex-row '>
-              <div className='border-[1px]'></div>
-              <div className='border-[1px]'></div>
+          <div className='flex flex-row basis-1/2'>
+            <div className='border-[1px] '></div>
+            <div className='border-[1px] w-[45%]'></div>
           </div>
-          <div className='flex flex-row'>
-
+          <div className='flex flex-row basis-1/2'>
+            <div className='border-[1px] w-[45%]'></div>
+            <div className='border-[1px] w-[45%]'></div>
           </div>
         </div>
       {/* why choose us end flex item2*/}
