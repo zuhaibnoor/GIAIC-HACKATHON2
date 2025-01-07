@@ -194,7 +194,7 @@ export default function Home() {
         <div className='pt-4 lg:pr-10 text-justify mb-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</div>
         <div className='w-full border-[1px] flex flex-col lg:flex-row h-[20%]'>
           <div className='flex flex-row basis-1/2'>
-            <div className='border-[1px] w-[45%] bg-orange'></div>
+            <div className='border-[1px] w-[45%] bg-orange-500'></div>
             <div className='border-[1px] w-[45%] bg-orange'></div>
           </div>
           <div className='flex flex-row basis-1/2'>
