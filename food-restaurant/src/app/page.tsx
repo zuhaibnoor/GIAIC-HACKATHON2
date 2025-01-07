@@ -197,7 +197,7 @@ export default function Home() {
             <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
             <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
           </div>
-          <div className='flex flex-row basis-1/2'>
+          <div className='flex flex-row basis-1/2 p-0'>
             <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
             <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
           </div>
