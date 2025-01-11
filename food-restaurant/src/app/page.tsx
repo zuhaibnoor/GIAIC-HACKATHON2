@@ -179,7 +179,7 @@ export default function Home() {
 
 
     {/* fourth div start (why choose us) */}
-    <div className='w-screen h-screen bg-[#0D0D0D] flex flex-row p-5 lg:p-20 '>
+    <div className='w-screen h-[140vh] lg:h-screen bg-[#0D0D0D] flex flex-row p-5 lg:p-20 '>
 
       {/* images start flex item1*/}
       <div className='basis-1/2'>
@@ -192,21 +192,30 @@ export default function Home() {
         <h1 className='font-["cursive"] text-[#FF9F0D] text-[32px]'> Why choose us?</h1>                  
         <div className='text-[#FFFFFF] text-[48px] font-Helvetica leading-tight tracking-tight font-[700]'><div className='text-[#FF9F0D] inline '> Ex</div>tra Ordinary Taste <br className='hidden lg: inline md:inline'/>And Experience</div>
         <div className='pt-4 lg:pr-10 text-justify mb-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</div>
-        <div className='w-full border-[1px] flex flex-col lg:flex-row h-[20%]'>
-          <div className='flex flex-row basis-1/2'>
-            <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
-            <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
+        <div className='w-full flex flex-col lg:flex-row h-[20%] space-x-0 space-y-2 lg:space-y-0 lg:space-x-2'>
+          <div className='flex flex-row basis-1/2 space-x-3' >
+            <div className=' w-[47.5%] bg-orange-500 rounded-[6px]'> <Image src={"/Hamburger.svg"} width={56} height={56} alt='hamburger' className='m-auto mt-7'/></div>
+            <div className=' w-[47.5%] bg-orange-500 rounded-[6px]'> <Image src={"/Cookie.svg"} width={56} height={56} alt='hamburger' className='m-auto mt-7'/> </div>
           </div>
-          <div className='flex flex-row basis-1/2 p-0'>
-            <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
-            <div className='border-[1px] w-[45%] bg-orange-500 p-2'></div>
+          <div className='flex flex-row basis-1/2'>
+            <div className=' w-[47.5%] bg-orange-500 rounded-[6px] '><Image src={"/Wine.svg"} width={56} height={56} alt='hamburger' className='m-auto mt-7'/> </div>
+            {/* <div className=' w-[47.5%] bg-orange-500 '></div> */}
           </div>
         </div>
+        <Image src={"/exper.svg"} width={374} height={93} alt='' className='mt-3'/>
       {/* why choose us end flex item2*/}
       </div>
-
-
     {/* fourth div end (why choose us) */}
+    </div>
+
+
+    {/* fifth div start (stats) */}
+    <div className='h-[80vh]'>
+      <div className=' '></div>
+
+
+
+    {/* fifth div end (stats) */}
     </div>
     </>
   );
