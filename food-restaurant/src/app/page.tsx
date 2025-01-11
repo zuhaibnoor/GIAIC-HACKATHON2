@@ -179,7 +179,7 @@ export default function Home() {
 
 
     {/* fourth div start (why choose us) */}
-    <div className='w-screen h-[140vh] lg:h-screen bg-[#0D0D0D] flex flex-row p-5 lg:p-20 '>
+    <div className='w-screen h-[120vh] lg:h-screen bg-[#0D0D0D] flex flex-row p-5 lg:p-20 '>
 
       {/* images start flex item1*/}
       <div className='basis-1/2'>
@@ -202,7 +202,7 @@ export default function Home() {
             {/* <div className=' w-[47.5%] bg-orange-500 '></div> */}
           </div>
         </div>
-        <Image src={"/exper.svg"} width={374} height={93} alt='' className='mt-3'/>
+        <Image src={"/exper.svg"} width={374} height={93} alt='' className='mt-3 w-[74%]'/>
       {/* why choose us end flex item2*/}
       </div>
     {/* fourth div end (why choose us) */}
@@ -210,8 +210,23 @@ export default function Home() {
 
 
     {/* fifth div start (stats) */}
-    <div className='h-[80vh]'>
-      <div className=' '></div>
+    <div className='h-[15vh] lg:h-[50vh]'>
+      {/* bg with image */}
+      <div className='bg-cover bg-center h-full' style={{
+        backgroundImage: "url('/stats-bg.png')", 
+        backgroundSize: "cover", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat", }}>
+      
+        {/* bg with shade */}
+        <div className='bg-[#0D0D0D] opacity-90 h-full w-full p-3 lg:p-[5%]'>
+          <Image src={"/Icon-box.svg"} width={100} height={100} alt = "" className='w-full'/>          
+        {/* bg with shade */}
+        </div>
+        
+        
+      {/* bg with image */}
+      </div>
 
 
 
